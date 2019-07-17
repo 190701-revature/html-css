@@ -1,0 +1,86 @@
+/* Foundational Types of selectors in CSS 
+    1. tag name - select all elements with that tag name
+    2. id name - Select an element by a given ID
+        id - Unique identifier for an element
+            An element should have only one id.
+            A given id should by given to only one element.
+        Uses # symbol.
+    3. class name - Select an element or elements by a given class name
+        class - They are meant to be reusable identifiers for variety of elements
+            A given class can be reused among many elements.
+            An element may have multiple classes
+
+    Big idea in how CSS rules cascade: Specificity
+        Properties of more specific rules will take presedence over 
+        those of less specific rules.
+*/
+
+body {
+    height: 1600px;
+    font-size: 12px;
+}
+
+
+/* tag name selector selecting all h1 elements */
+h1 {
+    /* font-weight can be used to affect boldness */
+    font-weight: 1;
+    height: 10%;
+}
+
+/* an ID selector - uses # */
+#opening-paragraph {
+    color: green;
+}
+
+/* .green {
+    color: green;
+} */
+
+/* class selector - uses . */
+.main-paragraphs {
+    /* Used to define fonts and font categories to utilize */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    /* In a computer to represent color is by giving a value to each underlying
+    color that is mixed to makeup the final color: RGB
+    RGB: R - Red part, G - Green part, B - Blue Part */
+    /* Often specified as a value between 0-255 representing the amount of 
+    the color or lightness of the color to be used to create the final color */
+
+    /* Hexadecimal is a numbering system that has 16 values per digit 
+        (base 16 numbering system) 0123456789abcdef*/
+        /* Each part has two digits: 16 * 16 = 256
+           /* RRGGBB */
+    color: #0077bb;
+    color: rgb(0, 117, 190);
+    
+    /* red-green-blue-alpha */
+    /* Opacity, transparency : Alpha portion is a decimal value between 0 and 1
+        where 1 is completely opaque and 0 is completely tranparent */
+    color: rgba(0, 117, 190, 1);
+
+    
+    /*
+        Size units:
+        px - pixels (virtual pixel)
+        % - percentage of parent (or containing) element
+        em - One em is the size of the letter M
+        rem - Relative 'em', like 'em' but relative to the root instead of the parent element
+    
+        vh - view height - Total height of the 'view' in percentages of 100
+        vw - view width  - Total width of the 'view' in percentages of 100
+        vmax - like vh/vw, but the larger of the two
+        vmin - like vh/vw, but the smaller of the two
+
+        */
+    font-size: 10vh;
+    background-color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+p {
+    color: purple;
+}
