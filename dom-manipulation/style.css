@@ -1,0 +1,8 @@
+.my-class {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.no-border {
+    border: none;
+}

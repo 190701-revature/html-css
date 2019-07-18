@@ -1,0 +1,55 @@
+body {
+    background: skyblue;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#click-counter {
+    border: 1px solid black;
+    height: 5rem;
+    width: 25rem;
+    /*     top/bottom, left/right */
+    /* auto on the left/right results in 
+    both sides sharing remaining space,
+    consequently, the div itself is centered*/
+    margin: 5rem auto 0;
+
+    font-size: 50px;
+    line-height: 5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header + hr {
+    width: 80%;
+    border-color: pink;
+}
+
+#click-box {
+    border: 1px solid black;
+    width: 40rem;
+    height: 15rem;
+    margin: 10px auto;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 15rem;
+    font-size: 50px;
+    box-sizing: border-box;
+    background: limegreen;
+    box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
+    user-select: none;
+}
+
+#click-box:hover {
+    background: lime;
+}
+

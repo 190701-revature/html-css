@@ -1,0 +1,60 @@
+/*
+    [>] direct child selector
+        div > a - targets any a directly within a div
+    [ ]  descendant selector
+        div a - targets any a anywhere within a div
+    [] intersection selector
+        div.my-class - targets any div which also has the class
+            'my-class'
+    [,] union selector (or multiselector)
+        div,a - targets both div and a tags
+    [~] sibling selector
+        div~a - target an a tag sibling to a div
+    [+] immediate sibling selector
+        div+a - target an immediately a sibling
+*/
+
+.karen {
+    height: 200px;
+    width: 200px;
+    background: blue;
+    margin: 20px;
+    transition: border-color 100ms linear;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/*
+    Pseudo-classes (also pseudo-selectors) are a way to select elements
+    based on their state, rather than just their location.
+*/
+
+.karen:hover {
+    border-color: grey;
+    /* background: green; */
+}
+
+/* .karen:focus {
+    background: red;
+}
+
+.karen:active {
+    background: yellow;
+} */
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.karen:nth-child(3n) {
+    background: black;
+}
+
+.karen:empty:after {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    content: 'empty :('
+}
